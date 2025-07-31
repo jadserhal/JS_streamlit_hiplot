@@ -16,7 +16,7 @@ if uploaded_file:
 
     numeric_cols = df.select_dtypes(include="number").columns.tolist()
     selected_cols = st.multiselect(
-        "Select columns to plot", numeric_cols, default=numeric_cols[:5]
+        "Select columns to plot", numeric_cols, default=numeric_cols[:2]
     )
 
     if selected_cols:
